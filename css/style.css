@@ -1,6 +1,11 @@
 *{
     text-align: center;
 }
-input{
-    margin: 10px 0;
+.form-control{
+    margin: 2px auto;
+    width: 25%;
+
 }
+    .form-control:not(:first-of-type){
+        float: left;
+    }
