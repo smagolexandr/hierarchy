@@ -13,43 +13,43 @@
             <h2>
                 Батько
             </h2>
-            <input required type="number" name="person_priority[0]" class="form-control" placeholder="Вага">
+            <input required type="number" min="0" max="1" step="0.01" name="person_priority[0]" class="form-control" placeholder="Вага">
             <hr>
-            <input required type="number" name="criteria[0][0]" class="form-control" placeholder="Ціна">
-            <input required type="number" name="obj[0][0]" class="form-control" placeholder="GTX 1080">
-            <input required type="number" name="obj[0][1]" class="form-control" placeholder="R9 295X2">
-            <input required type="number" name="obj[0][2]" class="form-control" placeholder="GTX 980 TI">
+            <input required type="number" min="0" max="1" step="0.01" name="criteria[0][0]" class="form-control" placeholder="Ціна">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[0][0]" class="form-control" placeholder="GTX 1080">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[0][1]" class="form-control" placeholder="R9 295X2">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[0][2]" class="form-control" placeholder="GTX 980 TI">
             <hr>
-            <input required type="number" name="criteria[0][1]" class="form-control" placeholder="Продуктивність">
-            <input required type="number" name="obj[1][0]" class="form-control" placeholder="GTX 1080">
-            <input required type="number" name="obj[1][1]" class="form-control" placeholder="R9 295X2">
-            <input required type="number" name="obj[1][2]" class="form-control" placeholder="GTX 980 TI">
+            <input required type="number" min="0" max="1" step="0.01" name="criteria[0][1]" class="form-control" placeholder="Продуктивність">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[1][0]" class="form-control" placeholder="GTX 1080">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[1][1]" class="form-control" placeholder="R9 295X2">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[1][2]" class="form-control" placeholder="GTX 980 TI">
             <hr>
-            <input required type="number" name="criteria[0][2]" class="form-control" placeholder="Вигляд">
-            <input required type="number" name="obj[2][0]" class="form-control" placeholder="GTX 1080">
-            <input required type="number" name="obj[2][1]" class="form-control" placeholder="R9 295X2">
-            <input required type="number" name="obj[2][2]" class="form-control" placeholder="GTX 980 TI">
+            <input required type="number" min="0" max="1" step="0.01" name="criteria[0][2]" class="form-control" placeholder="Вигляд">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[2][0]" class="form-control" placeholder="GTX 1080">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[2][1]" class="form-control" placeholder="R9 295X2">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[2][2]" class="form-control" placeholder="GTX 980 TI">
         </div>
         <div class="col-xs-6">
             <h2>
                 Син
             </h2>
-            <input required type="number" name="person_priority[1]" class="form-control" placeholder="Вага">
+            <input required type="number" min="0" max="1" step="0.01" name="person_priority[1]" class="form-control" placeholder="Вага">
             <hr>
-            <input required type="number" name="criteria[1][0]" class="form-control" placeholder="Ціна">
-            <input required type="number" name="obj[3][0]" class="form-control" placeholder="GTX 1080">
-            <input required type="number" name="obj[3][1]" class="form-control" placeholder="R9 295X2">
-            <input required type="number" name="obj[3][2]" class="form-control" placeholder="GTX 980 TI">
+            <input required type="number" min="0" max="1" step="0.01" name="criteria[1][0]" class="form-control" placeholder="Ціна">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[3][0]" class="form-control" placeholder="GTX 1080">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[3][1]" class="form-control" placeholder="R9 295X2">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[3][2]" class="form-control" placeholder="GTX 980 TI">
             <hr>
-            <input required type="number" name="criteria[1][1]" class="form-control" placeholder="Продуктивність">
-            <input required type="number" name="obj[4][0]" class="form-control" placeholder="GTX 1080">
-            <input required type="number" name="obj[4][1]" class="form-control" placeholder="R9 295X2">
-            <input required type="number" name="obj[4][2]" class="form-control" placeholder="GTX 980 TI">
+            <input required type="number" min="0" max="1" step="0.01" name="criteria[1][1]" class="form-control" placeholder="Продуктивність">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[4][0]" class="form-control" placeholder="GTX 1080">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[4][1]" class="form-control" placeholder="R9 295X2">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[4][2]" class="form-control" placeholder="GTX 980 TI">
             <hr>
-            <input required type="number" name="criteria[1][2]" class="form-control" placeholder="Вигляд">
-            <input required type="number" name="obj[5][0]" class="form-control" placeholder="GTX 1080">
-            <input required type="number" name="obj[5][1]" class="form-control" placeholder="R9 295X2">
-            <input required type="number" name="obj[5][2]" class="form-control" placeholder="GTX 980 TI">
+            <input required type="number" min="0" max="1" step="0.01" name="criteria[1][2]" class="form-control" placeholder="Вигляд">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[5][0]" class="form-control" placeholder="GTX 1080">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[5][1]" class="form-control" placeholder="R9 295X2">
+            <input required type="number" min="0" max="1" step="0.01" name="obj[5][2]" class="form-control" placeholder="GTX 980 TI">
         </div>
     </div>
     <input type="submit" class="btn btn-primary">
