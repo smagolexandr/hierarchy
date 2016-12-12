@@ -24,10 +24,7 @@ $data = [
 4920,
 4895,
 4984,
-5337,
-5374,
-5202,
-5358
+5337
 ];
 
 
@@ -36,21 +33,23 @@ if($_POST)
    $exp_avg =[];
    $avg = [];
    $post = $_POST['data'];//var_dump(count($post));
-   for ($i = 1; $i <= 27; $i++)
+   for ($i = 0; $i <= count($post); $i++)
    {
-        if ($i = 2)
+        if ($i == 1)
         {
             $exp_avg[$i] = $post[$i-1];
         }
 
-        if ($i > 3)
+        if ($i > 1)
         {
-            $exp_avg[$i] = 0.1 * $post[$i-1] + 0.9 * $exp_avg[$i-1];
+            $exp_avg[$i] = round(0.1 * $post[$i-1] + 0.9 * $exp_avg[$i-1],2);
+//            $exp_avg[$i] = 0.1 * $post[$i-1] + 0.9 * $exp_avg[$i-1];
         }
 
-        if ($i > 4)
+        if ($i > 2)
         {
-            $avg[$i] = ($post[$i-2] + $post[$i-1] + $post[$i])/3;
+            $avg[$i] = round(($post[$i-3] + $post[$i-2] + $post[$i-1])/3 , 2);
+//            $avg[$i] = ($post[$i-2] + $post[$i-1] + $post[$i])/3;
         }
    }
 }
@@ -63,26 +62,44 @@ if($_POST)
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<form action="methods4.php" method="POST">
-    <table width="100px">
-        <tr>
-            <td>
+<div class="container">
+    <div class="row">
+        <form action="methods4.php" method="POST">
+            <table class="table">
+
                 <?php
-                for($i=0; $i<27; $i++)
-                {
-                    // echo $data[$i];
-                    echo "<input type='number' step='0.01' name='data[$i]' value='$data[$i]'>";
-                    if($exp_avg && $avg)
+                if($_POST){
+                    for($i=0; $i<count($post); $i++)
                     {
-                        echo "</td><td>$exp_avg[$i]</td><td>$avg[$i]</td>";
+                        echo "<td>$data[$i]</td>";
+
+                        if(isset($avg[$i]))
+                        {
+                            echo "<td>$avg[$i]</td>";
+                        } else {
+                            echo "<td></td>";
+                        }
+
+                        if(isset($exp_avg[$i]) ){
+                            echo "<td>$exp_avg[$i]</td>";
+                        } else {
+                            echo "<td></td>";
+                        }
+                        echo "</tr>";
                     }
+
+                } else {
+                    for($i=0; $i<25; $i++)
+                    echo "<tr><td><input required class='form-control' type='number' step='0.01' name='data[$i]' value='$data[$i]'> </td></tr>";
+                    echo "<tr><td><input class='btn btn-primary' type='submit'></td></tr>";
                 }
+
                 ?>
-            </td>
-        </tr>
-    </table>
-    <input type="submit">
-</form>
+            </table>
+
+        </form>
+    </div>
+</div>
 <script href="/js/bootstrap.min.js"></script>
 <script href="/js/jquery.min.js"></script>
 </body>
