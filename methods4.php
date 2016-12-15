@@ -64,9 +64,9 @@ if($_POST)
 <body>
 <div class="container">
     <div class="row">
+        <h1>Наївні методи</h1>
         <form action="methods4.php" method="POST">
-            <table class="table">
-
+            <table class="table">   
                 <?php
                 if($_POST){
                     for($i=0; $i<count($post); $i++)
